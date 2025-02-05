@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>           
+        </ul>
+    </nav></header>
+    <div class="logo">Miko Food Delivery</div>
+    <div class="login">
+        <form action="" id="loginform">
+            <p>Login</p><br><br>
+            e-mail:<input type="email" name="email" id="email"  placeholder="abc@gmail.com" required ><br><br>
+            password:<input type="password" name="password" id="password" minlength="8"  required><br><br><br>
+           <input class="submit_" type="submit" value="Login" >
+        </form>
+
+    </div>
+    <footer id="contact">
+        <p>&copy; 2023 Foodie. All rights reserved.</p>
+        <p>Contact us: info@miko.com</p>
+    </footer>
+    <script >
+        document.getElementById('loginform').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+        if(email && password){
+        window.location.href='index.html';}
+    });</script>
+</body>
+</html>

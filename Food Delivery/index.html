@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Delicious Food Delivered to Your Doorstep</h1>
+            <div class="logo">Miko Food Delivery</div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="Burger.webp" alt="Burger">
+                <h3>Burger</h3>
+                <p>359 ETB</p>
+                <button onclick="addToCart('Burger')">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="pizza.jpg" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>279 ETB</p>
+                <button onclick="addToCart('Pizza')">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="tibes.jpg" alt="Tibes">
+                <h3>Tebis</h3>
+                <p>343 ETB</p>
+                <button onclick="addToCart('Tibes')">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="ferfer.jpg" alt="FerferS">
+                <h3>ferfer</h3>
+                <p>179 ETB</p>
+                <button onclick="addToCart('Ferfer')">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="shero.jpg" alt="shero">
+                <h3>Shero Wet</h3>
+                <p>210 ETB</p>
+                <button onclick="addToCart('shero')">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="tere_sega2.jpg" alt="Tibes">
+                <h3>Tere Sega</h3>
+                <p>640 ETB</p>
+                <button onclick="addToCart('Tere Sega')">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="beyayenet.jpg" alt="Tibes">
+                <h3>Beyayent</h3>
+                <p>249 ETB</p>
+                <button onclick="addToCart('Beyayent')">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="kitfo.jpg" alt="kitfo">
+                <h3>kitfo</h3>
+                <p>480 ETB</p>
+                <button onclick="addToCart('Kitfo')">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="dorowet.jpg" alt="Doro">
+                <h3>Doro Wet</h3>
+                <p>580 ETB</p>
+                <button onclick="addToCart('Doro Wet')">Add to Cart</button>
+            </div>
+            
+        </div>
+    </section>
+    <div>
+        <section class="cart" id="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div id="total-price">Total Price: 0 ETB</div>
+            <!-- <button onclick="checkout()">Checkout</button> -->
+        </section><br>
+</div>
+    <div class="order">
+        
+         <button onclick="orderNow()">Order Now</button>
+        
+    </div>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <p>&copy; 2023 Foodie. All rights reserved.</p>
+        <p>Contact us: info@foodie.com</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
